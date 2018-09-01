@@ -6,13 +6,14 @@
   "scripts": {
     "start": "electron .",
     "package-mac": "electron-packager . Shopping_List --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds --version-string.ProductName=\"Shopping List\"",
-    "package-win": "electron-packager . Shopping_List --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Shopping List\"",    
+    "package-win": "electron-packager . Shopping_List --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Shopping List\"",
     "package-linux": "electron-packager . Shopping_List --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/icon.png --prune=true --out=release-builds --version-string.ProductName=\"Shopping List\""
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "electron": "^2.0.8"
+    "electron": "^2.0.8",
+    "electron-store": "^2.0.0"
   },
   "devDependencies": {
     "electron-packager": "^12.1.1"
